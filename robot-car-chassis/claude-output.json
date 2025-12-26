@@ -1,0 +1,293 @@
+{
+  "project": {
+    "name": "RobotCarArmor",
+    "description": "ロボットカー装甲設計 - 3段構成",
+    "units": "mm",
+    "created_date": "2025-12-26"
+  },
+  "constraints": {
+    "3d_printer_max_volume": {
+      "width": 180,
+      "depth": 180,
+      "height": 180,
+      "note": "3Dプリンターの最大造形体積により板をX軸中心で2分割"
+    }
+  },
+  "layer1": {
+    "description": "1層目ベースプレート-2分割",
+    "original_dimensions": {
+      "width": 240,
+      "depth": 175,
+      "thickness": 6
+    },
+    "split_axis": "X",
+    "split_position": 0,
+    "parts": {
+      "Layer1_Right": {
+        "object_name": "Layer1_Right",
+        "description": "1層目右側板-前方",
+        "color_rgb": [0.2, 0.6, 0.8],
+        "geometry": {
+          "type": "rectangular_plate_with_holes_and_pockets",
+          "dimensions": {
+            "width": 120,
+            "depth": 175,
+            "thickness": 6
+          },
+          "bounding_box": {
+            "min": {"x": 0, "y": -87.5, "z": 0},
+            "max": {"x": 120, "y": 87.5, "z": 6}
+          },
+          "volume_mm3": 118743.19
+        },
+        "holes": {
+          "motor_mounting_holes_A": {
+            "description": "モーター固定用穴A-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "A1": {"x": 70.0, "y": 66.5, "z": 0},
+              "A2": {"x": 62.5, "y": 66.5, "z": 0}
+            }
+          },
+          "motor_mounting_holes_B": {
+            "description": "モーター固定用穴B-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "B1": {"x": 70.0, "y": -66.5, "z": 0},
+              "B2": {"x": 62.5, "y": -66.5, "z": 0}
+            }
+          },
+          "l298n_driver_holes": {
+            "description": "L298Nドライバー固定用の穴-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "A": {"x": 17.0, "y": 16.75, "z": 0},
+              "B": {"x": 17.0, "y": -16.75, "z": 0}
+            }
+          },
+          "motor_wire_holes": {
+            "description": "モーターのワイヤーを通す穴",
+            "hole_diameter": 18.0,
+            "locations": {
+              "A": {"x": 67.25, "y": 52.5, "z": 0},
+              "B": {"x": 67.25, "y": -52.5, "z": 0}
+            }
+          },
+          "layer2_connection_holes": {
+            "description": "2層目の板との接続用の穴-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "A": {"x": 40.0, "y": 80.5, "z": 0},
+              "B": {"x": 40.0, "y": -80.5, "z": 0}
+            }
+          }
+        },
+        "pockets": {
+          "description": "結合用くぼみ-接合面側、上面から掘り込み",
+          "pocket_dimensions": {
+            "width": 10,
+            "depth": 30,
+            "height": 4
+          },
+          "locations": [
+            {
+              "name": "Pocket_1",
+              "bounding_box": {
+                "min": {"x": 0, "y": 35, "z": 2},
+                "max": {"x": 10, "y": 65, "z": 6}
+              }
+            },
+            {
+              "name": "Pocket_2",
+              "bounding_box": {
+                "min": {"x": 0, "y": -15, "z": 2},
+                "max": {"x": 10, "y": 15, "z": 6}
+              }
+            },
+            {
+              "name": "Pocket_3",
+              "bounding_box": {
+                "min": {"x": 0, "y": -65, "z": 2},
+                "max": {"x": 10, "y": -35, "z": 6}
+              }
+            }
+          ]
+        },
+        "total_holes_count": 10
+      },
+      "Layer1_Left": {
+        "object_name": "Layer1_Left",
+        "description": "1層目左側板-後方",
+        "color_rgb": [0.8, 0.6, 0.2],
+        "geometry": {
+          "type": "rectangular_plate_with_holes_and_pockets",
+          "dimensions": {
+            "width": 120,
+            "depth": 175,
+            "thickness": 6
+          },
+          "bounding_box": {
+            "min": {"x": -120, "y": -87.5, "z": 0},
+            "max": {"x": 0, "y": 87.5, "z": 6}
+          },
+          "volume_mm3": 117536.81
+        },
+        "holes": {
+          "motor_mounting_holes_C": {
+            "description": "モーター固定用穴C-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "C1": {"x": -70.0, "y": 66.5, "z": 0},
+              "C2": {"x": -62.5, "y": 66.5, "z": 0}
+            }
+          },
+          "motor_mounting_holes_D": {
+            "description": "モーター固定用穴D-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "D1": {"x": -70.0, "y": -66.5, "z": 0},
+              "D2": {"x": -62.5, "y": -66.5, "z": 0}
+            }
+          },
+          "l298n_driver_holes": {
+            "description": "L298Nドライバー固定用の穴-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "C": {"x": -20.5, "y": 16.75, "z": 0},
+              "D": {"x": -20.5, "y": -16.75, "z": 0}
+            }
+          },
+          "motor_wire_holes": {
+            "description": "モーターのワイヤーを通す穴",
+            "hole_diameter": 18.0,
+            "locations": {
+              "C": {"x": -67.25, "y": 52.5, "z": 0},
+              "D": {"x": -67.25, "y": -52.5, "z": 0}
+            }
+          },
+          "battery_zip_tie_holes": {
+            "description": "バッテリーを固定する結束バンド用の穴",
+            "hole_diameter": 8.0,
+            "locations": {
+              "A": {"x": -30.0, "y": 44.0, "z": 0},
+              "B": {"x": -30.0, "y": -44.0, "z": 0},
+              "C": {"x": -105.0, "y": 44.0, "z": 0},
+              "D": {"x": -105.0, "y": -44.0, "z": 0}
+            }
+          },
+          "layer2_connection_holes": {
+            "description": "2層目の板との接続用の穴-M3インサートナット用",
+            "hole_diameter": 4.0,
+            "locations": {
+              "C": {"x": -113.0, "y": 80.5, "z": 0},
+              "D": {"x": -113.0, "y": -80.5, "z": 0}
+            }
+          }
+        },
+        "pockets": {
+          "description": "結合用くぼみ-接合面側、上面から掘り込み",
+          "pocket_dimensions": {
+            "width": 10,
+            "depth": 30,
+            "height": 4
+          },
+          "locations": [
+            {
+              "name": "Pocket_1",
+              "bounding_box": {
+                "min": {"x": -10, "y": 35, "z": 2},
+                "max": {"x": 0, "y": 65, "z": 6}
+              }
+            },
+            {
+              "name": "Pocket_2",
+              "bounding_box": {
+                "min": {"x": -10, "y": -15, "z": 2},
+                "max": {"x": 0, "y": 15, "z": 6}
+              }
+            },
+            {
+              "name": "Pocket_3",
+              "bounding_box": {
+                "min": {"x": -10, "y": -65, "z": 2},
+                "max": {"x": 0, "y": -35, "z": 6}
+              }
+            }
+          ]
+        },
+        "total_holes_count": 14
+      }
+    }
+  },
+  "connectors": {
+    "object_name": "Connectors",
+    "description": "板結合用はめ込み部品",
+    "color_rgb": [0.9, 0.3, 0.3],
+    "quantity": 3,
+    "dimensions": {
+      "width": 19.8,
+      "depth": 29.8,
+      "height": 3.8
+    },
+    "clearance": 0.2,
+    "combined_pocket_dimensions": {
+      "description": "両板を接合した時のくぼみサイズ-左右合計",
+      "width": 20,
+      "depth": 30,
+      "height": 4
+    },
+    "positions_for_printing": [
+      {"center": {"x": 139.9, "y": 50, "z": 1.9}},
+      {"center": {"x": 139.9, "y": 0, "z": 1.9}},
+      {"center": {"x": 139.9, "y": -50, "z": 1.9}}
+    ],
+    "assembly_positions": [
+      {"center": {"x": 0, "y": 50, "z": 4}},
+      {"center": {"x": 0, "y": 0, "z": 4}},
+      {"center": {"x": 0, "y": -50, "z": 4}}
+    ]
+  },
+  "vertices": {
+    "description": "元の板全体の頂点定義",
+    "A": {"x": 120, "y": 87.5, "z": 0},
+    "B": {"x": 120, "y": -87.5, "z": 0},
+    "C": {"x": -120, "y": 87.5, "z": 0},
+    "D": {"x": -120, "y": -87.5, "z": 0}
+  },
+  "hole_summary": {
+    "total_holes": 24,
+    "right_plate_holes": 10,
+    "left_plate_holes": 14,
+    "by_type": {
+      "M3_insert_nut_holes": {
+        "diameter": 4.0,
+        "count": 16,
+        "purpose": "M3インサートナット用 - モーター8個、L298N 4個、2層目接続4個"
+      },
+      "wire_pass_through_holes": {
+        "diameter": 18.0,
+        "count": 4,
+        "purpose": "モーターワイヤー通し穴"
+      },
+      "zip_tie_holes": {
+        "diameter": 8.0,
+        "count": 4,
+        "purpose": "バッテリー固定用結束バンド穴"
+      }
+    }
+  },
+  "printing_info": {
+    "total_parts_count": 5,
+    "plates": {
+      "count": 2,
+      "each_size": "120 x 175 x 6 mm",
+      "fits_in_printer": true
+    },
+    "connectors": {
+      "count": 3,
+      "each_size": "19.8 x 29.8 x 3.8 mm",
+      "fits_in_printer": true
+    },
+    "assembly_note": "印刷後、左右の板を接合面で合わせ、コネクタをくぼみにはめ込んで固定"
+  }
+}
