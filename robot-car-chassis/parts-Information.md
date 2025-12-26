@@ -1,0 +1,25 @@
+
+- Raspberry Pi4 model B 8GB
+  - https://amzn.asia/d/g2FSUiG
+  - サイズ: 85.6mm × 56mm × 約17mm (標準的なRaspberry Piボードサイズ)
+- DC mortor & wheel
+  - https://amzn.asia/d/2PFwdV5
+  - サイズ: モーター約37mm × 22mm、ホイール径約65mm (製品により変動)
+- L298N
+  - https://ja.aliexpress.com/item/1005007480563572.html
+  - サイズ: 約43mm × 43mm × 27mm
+- Battery(5 ボルト/20Ah)
+  - https://amzn.asia/d/2BgvzXm
+  - サイズ: 134mm × 71mm × 25mm
+- web camera
+  - https://amzn.asia/d/eHsRWGm
+  - サイズ: 約25mm × 24mm × 約10mm
+- speaker
+  - https://ja.aliexpress.com/item/1005004800310068.html
+  - サイズ: 約40-50mm × 約15-20mm
+- microphone
+  - https://ja.aliexpress.com/item/4001282720530.html
+  - サイズ: 小型クリップ式またはモジュール約20-30mm
+- display
+  - https://ja.aliexpress.com/item/1005006739026067.html
+  - 全体約170mm × 100mm
