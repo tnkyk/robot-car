@@ -1,10 +1,8 @@
 from enum import Enum
-import pigpio
 
 class PI_GPIO(Enum):
     def __init__(self):
-        print("GPIO初期定義")
-        self.pi = pigpio.pi()
+        pass
     # L298NのGPIO定義
     L298N_IN_1 = 22 # モーター1/2の回転方向を制御
     L298N_IN_2 = 23 # モーター1/2の回転方向を制御

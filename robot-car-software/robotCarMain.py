@@ -1,12 +1,9 @@
 from pimygpio import PI_GPIO
-from dcMortorL298N import setupL298N
-
-def setupHardWare(pi):
-    setupL298N(pi)
+from dcMortorL298N import Motor
 
 def main():
-    pi = PI_GPIO().pi
-    setupHardWare(pi)
+    dcMotor = Motor()
+    
 
 if __name__ == "__main__":
     main()
