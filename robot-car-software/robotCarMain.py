@@ -26,9 +26,9 @@ def main():
         elif key == 's':
             dcMotor.move(Motor.BACKWARD,20)
         elif key == 'a':
-            dcMotor.move(Motor.LEFT,20)
+            dcMotor.move(Motor.LEFT,70)
         elif key == 'd':
-            dcMotor.move(Motor.RIGHT,20)
+            dcMotor.move(Motor.RIGHT,70)
         elif key == 'e':
             dcMotor.move(Motor.STOP,0)
         elif key == 'q':
