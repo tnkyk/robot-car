@@ -1,4 +1,4 @@
-from dcMortorL298N import Motor
+from infrastructure.motor import Motor
 import sys
 import termios
 import tty
